@@ -12,16 +12,16 @@ const {AppMetrica} = NativeModules;
 
 export default {
 
-  activate(config: AppMetricaConfig) {
+  activate(config) {
     AppMetrica.activate(config);
   },
 
   // Android
-  async getLibraryApiLevel(): number {
+  async getLibraryApiLevel() {
     return AppMetrica.getLibraryApiLevel();
   },
 
-  async getLibraryVersion(): string {
+  async getLibraryVersion() {
     return AppMetrica.getLibraryVersion();
   },
 
@@ -29,23 +29,23 @@ export default {
     AppMetrica.pauseSession();
   },
 
-  reportAppOpen(deeplink: ?string = null) {
+  reportAppOpen(deeplink = null) {
     AppMetrica.reportAppOpen(deeplink);
   },
 
-  reportError(error: string, reason: Object) {
+  reportError(error, reason) {
     AppMetrica.reportError(error);
   },
 
-  reportEvent(eventName: string, attributes: ?Object = null) {
+  reportEvent(eventName, attributes = null) {
     AppMetrica.reportEvent(eventName, attributes);
   },
 
-  reportReferralUrl(referralUrl: string) {
+  reportReferralUrl(referralUrl) {
     AppMetrica.reportReferralUrl(referralUrl);
   },
 
-  requestAppMetricaDeviceID(listener: (deviceId?: String, reason?: AppMetricaDeviceIdReason) => void) {
+  requestAppMetricaDeviceID(listener) {
     AppMetrica.requestAppMetricaDeviceID(listener);
   },
 
@@ -57,19 +57,19 @@ export default {
     AppMetrica.sendEventsBuffer();
   },
 
-  setLocation(location: ?Location) {
+  setLocation(location) {
     AppMetrica.setLocation(location);
   },
 
-  setLocationTracking(enabled: boolean) {
+  setLocationTracking(enabled) {
     AppMetrica.setLocationTracking(enabled);
   },
 
-  setStatisticsSending(enabled: boolean) {
+  setStatisticsSending(enabled) {
     AppMetrica.setStatisticsSending(enabled);
   },
 
-  setUserProfileID(userProfileID?: string) {
+  setUserProfileID(userProfileID) {
     AppMetrica.setUserProfileID(userProfileID);
   },
 };

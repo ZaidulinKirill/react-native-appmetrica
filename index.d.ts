@@ -6,7 +6,7 @@ export declare type AppMetricaConfig = {
   appVersion?: string,
   crashReporting?: boolean,
   firstActivationAsUpdate?: boolean,
-  location: Location,
+  location?: Location,
   locationTracking?: boolean,
   logs?: boolean,
   sessionTimeout?: number,
