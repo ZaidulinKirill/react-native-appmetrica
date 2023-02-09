@@ -1,9 +1,10 @@
 {
   "name": "@kirz/react-native-appmetrica",
   "title": "Yandex AppMetrica React Native Plugin",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "React Native plugin for AppMetrica analytics tool",
   "main": "index.js",
+  "types": "index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -28,7 +29,7 @@
   "license": "MIT",
   "homepage": "https://appmetrica.yandex.com/docs",
   "peerDependencies": {
-    "react-native": ">=0.59.0 <1.0.x"
+    "react-native": ">=0.59.0"
   },
   "devDependencies": {
   }
